@@ -1,11 +1,13 @@
-hungry= input("are you hungry? ")
-if hungry== "yes":
-    print("Eat samosa")
-else:
-    print("do your homework")
+list1= list(input("Eneter the number").split(","))
+d={}
+san_values=[]
+for l in list1:
+    l1= l.split("=")
+    if "s" in l1[0]:
+        san_values.append(l[1])
+    else:
+        d[l1[0]] = l1[1]
 
-pro = input("Are you developer")
-if pro== "dev":
-    print("Write a code")
-else:
-    print("review the code")
+d['san_value'] = san_values
+print(d)
+print(san_values)
